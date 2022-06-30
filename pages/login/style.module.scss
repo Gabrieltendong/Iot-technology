@@ -1,0 +1,93 @@
+#login_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #logo_wrapper{
+        height: 250px;
+        width: 250px;
+        position: relative;
+        margin-top: -30px;
+    }
+    .btn{
+        width: 100%;
+        background-color: #EB0000;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    #card{
+        height: 300px;
+        width: 280px;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        padding: 20px 30px;
+
+        h3{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat-Bold';
+        }
+        .input_wrapper{
+            margin-top: 20px;
+            label{
+                font-family: 'Montserrat-Regular';
+                font-weight: 600;
+            }
+            .input{
+                height: 40px;
+                border: 1px solid #B4B4B4;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 10px;
+                padding: 0 10px;
+
+                .vertical_divided{
+                    width: 1px;
+                    height: 25px;
+                    background-color:#CDCDCD;
+                    margin: 0 10px;
+                }
+                input{
+                    display: flex;
+                    border: none;
+                    flex: 1;
+
+                    &:focus, &:active{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    h2{
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: 'Montserrat-Bold';
+    }
+    #content_rs{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 10px;
+        margin: 10px 0;
+    }
+    p{
+        margin-top: 20px;
+        a{
+            color: #555;
+        }
+    }
+    footer{
+        height: 20px;
+        position: absolute;
+        bottom: 20px;
+        span{
+            font-size: 16px;
+            font-family: 'Montserrat-Bold';
+        }
+    }
+}

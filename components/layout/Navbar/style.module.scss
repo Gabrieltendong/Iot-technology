@@ -1,0 +1,30 @@
+#nabbar_wrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0 150px;
+    height: 150px;
+    align-items: center;
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    #logo_wrapper{
+        height: 60px;
+        width: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo{
+        border: 1px solid;
+    }
+
+}

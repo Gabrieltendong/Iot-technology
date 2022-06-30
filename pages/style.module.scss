@@ -1,0 +1,264 @@
+#home_wrapper{
+    margin: 0px;
+    p{
+        font-weight: 500;
+    }
+
+    header{
+        height: 100vh;
+        width: 100%;
+        background-image: url('/assets/bg_header.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        isolation: isolate;
+
+        #header_content{
+            height: 100vh;
+            width: 100%;
+            color: #fff;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                background: #EB0000;
+                mix-blend-mode: darken;
+            }
+
+            #content_text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 7vh;
+                z-index: 2;
+
+                h1{
+                    font-size: 7vh;
+                    text-transform: uppercase;
+                    font-family: "Montserrat-Bold";
+                }
+                p{
+                    width: 50%;
+                    font-size: 4vh;
+                    text-align: center;
+                }
+            }
+            .btn_header{
+                margin-top: 50px;
+            }
+        }
+    }
+    main{
+        min-height: 500px;
+
+        .title_section {
+            font-size: 40px;
+            color: black;
+            text-transform: uppercase;
+            width: 45%;
+            text-align: center;
+            margin-top: 140px;
+            margin-bottom: 50px;
+        }
+        .subTitle_section{
+            width: 45%;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        .section_title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        // ------------- section avantage -----------------
+        #section_avatange{
+            .margin_vertical{
+                // margin: 20px 0;
+                p{
+                    color: #777;
+                    font-size: 12px;
+                }
+            }
+            .right_text{
+                text-align: right;
+            }
+            .left_text{
+                text-align: left;
+            }
+            .space_beetwen{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            #image_wrapper{
+                height: 300px;
+                position: relative;
+                margin: 0 70px;
+            }
+            #avatange_wrapper{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 20% 60% 20%;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15%;
+                margin-top: 50px;
+                box-sizing: border-box;
+                
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    h4{
+                        width: 150px;
+                        margin: 0 20px 0 0;
+                    }
+                }
+                .margin_left{
+                    margin-left: 15px!important;
+                }
+            }
+        }
+
+        // -------------- section our service -------------
+        #section_our_service{
+            #car_wrapper{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                padding: 0 100px;
+
+                .card{
+                    height: 450px;
+                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+                    border-radius: 30px;
+                    margin: 0 10px;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1{
+                        font-size: 35px;
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                    .card_body{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 50px;
+                        margin-bottom: 40px;
+                        width: 100%;
+
+                        .alin_center{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            margin: 0 20px;
+                        }
+                        .card_image{
+                            height: 150px;
+                            width: 150px;
+                            position: relative;
+                        }
+                    }
+                    .card_footer{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .btn_see_more{
+                            color: #EB0000;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ------------- section ou certification ---------
+        #section_our_certification{
+            background-color: #EB0000;
+            height: 500px;
+            margin: 150px 0 0 0;
+            padding: 0px 150px;
+            box-sizing: border-box;
+            color: #fff;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+
+            h1{ 
+                font-size: 40px;
+                text-transform: uppercase;
+                margin-top: 0;
+            }
+            p{
+                line-height: 20px;
+                font-size: 12px;
+            }
+            #section_our_certification_text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            #content_cert_image{
+                height: 40%;
+                width: 50vh;
+                border: 1px solid;
+                position: relative;
+                margin-left: 100px;
+
+                #img1{
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    background-color: #fff;
+                    z-index: 2;
+                }
+                #img2{
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: -40px;
+                    right: -100px;
+                    z-index: 1;
+                    background-color: rgb(230, 230, 230);
+                }
+            }
+        }
+
+        // ------------- section subscription ---------
+        #section_subcription{
+            height: 600px;
+            background-image: url('/assets/subscription.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            backdrop-filter: blur(10px);
+            h1{
+                margin-top: 0;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+            p{
+
+            }
+            .btn_subscription{
+                background-color: #EB0000;
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+    }
+}
