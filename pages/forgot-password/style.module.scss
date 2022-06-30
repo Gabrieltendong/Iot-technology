@@ -1,3 +1,54 @@
 #forgot_password_wrapper{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #logo_wrapper{
+        height: 250px;
+        width: 250px;
+        position: relative;
+        margin-top: -30px;
+    }
+    .btn{
+        width: 100%;
+        background-color: #EB0000;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    #card{
+        min-height: 300px;
+        width: 300px;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        padding: 20px 30px;
+        
+        p{
+            font-size: 12px;
+            margin: 20px 0;
+        }
+        #divided{
+            height: 1px;
+            background-color: #0B0B0B;
+            margin-right: 20px;
+        }
+        h3{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat-Bold';
+            font-size: 20px;
+        }
+        
+    }
+    footer{
+        height: 20px;
+        position: absolute;
+        bottom: 20px;
+        span{
+            font-size: 16px;
+            font-family: 'Montserrat-Bold';
+        }
+    }
 }
