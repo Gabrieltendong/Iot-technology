@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id={styles.home_wrapper}>
       <Head>
-        <title>Create Next App</title>
+        <title>Iot Technology</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
@@ -22,7 +22,7 @@ export default function Home() {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
             <Button 
               style={styles.btn_header}
-              text='Abonnements'
+              text='Découvrir'
             />
           </div>
         </div>

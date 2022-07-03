@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
                 <div id={styles.copyright_wrapper}>
                     <h3>2022-IOT Technology</h3>
-                    <p>politique de confidentialite</p>
+                    <p>politique de confidentialité</p>
                 </div>
             </div>
             <div>

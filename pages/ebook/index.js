@@ -4,9 +4,6 @@ import { FaBookmark } from 'react-icons/fa'
 import Button from '../../components/common/Button'
 import Footer from './Footer'
 import Navbar from './Navbar'
-
-
-
 import styles from './style.module.scss'
 
 export default function Home() {
@@ -69,9 +66,9 @@ export default function Home() {
             <div className={styles.hr} />
             <h2>L’essentiel de CKA Kybernetes</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
-            <span>75 €</span>
+            <span>10€</span>
             <Button
-                  text={'Achecter'}
+                  text={'Acheter'}
                   style={styles.btn}
                 />
           </div>
@@ -81,9 +78,9 @@ export default function Home() {
             <div className={styles.hr} />
             <h2>L’essentiel de docker</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
-            <span>75 €</span>
+            <span>10 €</span>
             <Button
-                  text={'Achecter'}
+                  text={'Acheter'}
                   style={styles.btn}
                 />
           </div>
@@ -105,9 +102,9 @@ export default function Home() {
             <div className={styles.hr} />
             <h2>L’essentiel de git</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
-            <span>75 €</span>
+            <span>10 €</span>
             <Button
-                  text={'Achecter'}
+                  text={'Acheter'}
                   style={styles.btn}
                 />
           </div>
@@ -117,9 +114,9 @@ export default function Home() {
             <div className={styles.hr} />
             <h2>L’essentiel de Linux</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
-            <span>75 €</span>
+            <span>10 €</span>
             <Button
-                  text={'Achecter'}
+                  text={'Acheter'}
                   style={styles.btn}
                 />
           </div>

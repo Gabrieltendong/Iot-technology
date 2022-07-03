@@ -34,7 +34,7 @@ const Register = () => {
                   />
                   <h3>Apprentissage rapide</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris diam.</p>
+                <p>Profitez d'un apprentissage rapide des fondamentaux.</p>
               </div>
               <div className={styles.item}>
                 <div className={styles.row}>
@@ -43,9 +43,9 @@ const Register = () => {
                     height={40}
                     width={40}
                   />
-                  <h3>Apprentissage rapide</h3>
+                  <h3>Vidéos à la demande</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris diam.</p>
+                <p>Profitez d'un support de cours adapté et attrayant.</p>
               </div>
               <div className={styles.item}>
                 <div className={styles.row}>
@@ -54,9 +54,9 @@ const Register = () => {
                     height={40}
                     width={40}
                   />
-                  <h3>Apprentissage rapide</h3>
+                  <h3>Progressez</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris diam.</p>
+                <p>Notez votre progression et revenez plus tard.</p>
               </div>
             </div>
             <div id={styles.divided}></div>
@@ -84,13 +84,13 @@ const Register = () => {
                 <div className={styles.outline}></div>
               </div>
               <Input
-                label={'Prenom'}
+                label={'Prénom'}
               />
               <Input
                 label={'Nom'}
               />
               <Input
-                label={'Email'}
+                label={'Émail'}
               />
               <Input
                 label={'Mot de passe'}
@@ -106,7 +106,7 @@ const Register = () => {
               />
               <p id={styles.link_login}>Vous avez déjà un compte ?  
                 <Link href={'/register'}>
-                  <a>Connectez vous</a>
+                  <a>Connectez-vous</a>
                 </Link>
               </p>
             </div>

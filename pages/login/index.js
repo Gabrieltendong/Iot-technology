@@ -21,7 +21,7 @@ const Login = () => {
           />
         </div>
         <div id={styles.card}>
-          <h3>Connexion</h3>
+          <h3>Connection</h3>
           <div className={styles.input_wrapper}>
             <label>Email</label>
             <div className={styles.input} >

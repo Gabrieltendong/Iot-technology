@@ -18,22 +18,22 @@ const Navbar = () => {
             </div>
             <div id={styles.navbar}>
                 <Link href='#'>
-                    <a>Nos formations</a>
+                    Nos formations
                 </Link>
                 <Link href='#'>
-                    <a>Tarifs</a>
+                    Tarifs
                 </Link>
                 <Link href='#'>
-                    <a>Entreprise</a>
+                    Entreprise
                 </Link>
                 <Link href='/ebook'>
-                    <a>Ebook</a>
+                    Ebook
                 </Link >
                 <Link href='/register'>
-                    <a>Incription</a>
+                    Inscription
                 </Link>
                 <Link href='/login'>
-                    <a>Connexion</a>
+                    Connection
                 </Link>
             </div>
         </div>
