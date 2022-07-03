@@ -128,3 +128,31 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    #register_wrapper{
+        #card{
+            width: 90vw!important;
+        }
+        #col_1{
+            display: none;
+        }
+        #divided{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+    #register_wrapper{
+        #card{
+            width: 60vw!important;
+        }
+        #col_1{
+            display: none;
+        }
+        #divided{
+            display: none;
+        }
+    }
+}

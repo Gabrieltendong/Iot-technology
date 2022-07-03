@@ -1,9 +1,8 @@
 #nabbar_wrapper{
-    display: grid;
-    grid-template-columns: 20% 80%;
+
     padding: 0 150px;
     height: 150px;
-    align-items: center;
+    // align-items: center;
 
     #navbar{
         display: flex;
@@ -19,12 +18,17 @@
         height: 60px;
         width: 100px;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-right: 15vw;
     }
     #logo{
         border: 1px solid;
     }
 
+}
+
+// responsive design
+@media only screen and (max-width: 900px) {
+    #nabbar_wrapper {
+        padding: 0 20px;
+    }
 }

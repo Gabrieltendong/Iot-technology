@@ -47,6 +47,9 @@ const Login = () => {
                   placeholder='Mot de passe'
                 />
             </div>
+            <Link href={'/forgot-password'}>
+              <a>Mot de passe oublié?</a>
+            </Link>
           </div>
           <Button
             text={'Connexion'}
@@ -55,21 +58,24 @@ const Login = () => {
         </div>
         <h2>Utilisez une autre méthode pour vous connecter </h2>
         <div id={styles.content_rs}>
-            <Image
-              src={'/assets/icons/google.png'}
-              height={50}
-              width={100}
-            />
-            <Image
-              src={'/assets/icons/github.png'}
-              height={50}
-              width={100}
-            />
-            <Image
-              src={'/assets/icons/linkedin.png'}
-              height={50}
-              width={100}
-            />
+            <div className={styles.rs_wrapper}>
+              <Image
+                src={'/assets/icons/google.png'}
+                layout='fill'
+              />
+            </div>
+            <div className={styles.rs_wrapper}>
+              <Image
+                src={'/assets/icons/github.png'}
+                layout='fill'
+              />
+            </div>
+            <div className={styles.rs_wrapper}>
+              <Image
+                src={'/assets/icons/linkedin.png'}
+                layout='fill'
+              />
+            </div>
         </div>
         <p>Vous n’avez pas de compte ? 
           <Link href={'/register'}>

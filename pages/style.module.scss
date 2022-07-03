@@ -1,5 +1,6 @@
 #home_wrapper{
     margin: 0px;
+    width: 100%;
     p{
         font-weight: 500;
     }
@@ -21,7 +22,9 @@
             &::after{
                 content: '';
                 position: absolute;
-                inset: 0;
+                height: 100%;
+                width: 100%;
+                top: 0;
                 z-index: -1;
                 background: #EB0000;
                 mix-blend-mode: darken;
@@ -35,13 +38,14 @@
                 z-index: 2;
 
                 h1{
-                    font-size: 7vh;
+                    font-size: 4vw;
                     text-transform: uppercase;
                     font-family: "Montserrat-Bold";
+                    text-align: center;
                 }
                 p{
                     width: 50%;
-                    font-size: 4vh;
+                    font-size: 2vw;
                     text-align: center;
                 }
             }
@@ -54,7 +58,7 @@
         min-height: 500px;
 
         .title_section {
-            font-size: 40px;
+            font-size: 3vw;
             color: black;
             text-transform: uppercase;
             width: 45%;
@@ -184,7 +188,7 @@
         // ------------- section ou certification ---------
         #section_our_certification{
             background-color: #EB0000;
-            height: 500px;
+            min-height: 500px;
             margin: 150px 0 0 0;
             padding: 0px 150px;
             box-sizing: border-box;
@@ -194,7 +198,7 @@
             align-items: center;
 
             h1{ 
-                font-size: 40px;
+                font-size: 3vw;
                 text-transform: uppercase;
                 margin-top: 0;
             }
@@ -209,9 +213,10 @@
             }
             #content_cert_image{
                 height: 40%;
-                width: 50vh;
+                width: 25vw;
                 border: 1px solid;
                 position: relative;
+                box-sizing: border-box;
                 margin-left: 100px;
 
                 #img1{
@@ -235,7 +240,7 @@
 
         // ------------- section subscription ---------
         #section_subcription{
-            height: 600px;
+            height: 80vh;
             background-image: url('/assets/subscription.png');
             background-repeat: no-repeat;
             background-size: cover;
@@ -249,7 +254,8 @@
                 margin-top: 0;
                 margin-bottom: 10px;
                 text-transform: uppercase;
-                font-size: 50px;
+                font-size: 3vw;
+                text-align: center;
             }
             p{
 
@@ -258,6 +264,98 @@
                 background-color: #EB0000;
                 color: #fff;
                 margin-top: 20px;
+            }
+        }
+    }
+}
+
+// responsive design
+@media (max-width: 400px) {
+    #home_wrapper{
+        header {
+            height: 80vh!important;
+            #content_text{
+                h1{
+                    font-size: 8vw!important;
+                }
+                p{
+                    font-size: 4vw!important;
+                }
+            }
+        }
+        #avatange_wrapper{
+            display: flex!important;
+            flex-direction: column;
+        }
+        #section_our_certification{
+            padding: 30px 20px;
+            h1{ 
+                text-align: center;
+            }
+            #content_cert_image{
+                height: 100px!important;
+                width: 150px!important;
+            }
+        }
+        #section_subcription{
+            height: 60vh!important;
+            h1{
+                font-size: 6vw!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    #home_wrapper{
+        .title_section{
+            font-size: 7vw!important;
+            width: 80%!important;
+        }
+        .subTitle_section{
+            width: 80%!important;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        #section_our_service{
+            #car_wrapper{
+                padding: 0 10px!important;
+                display: flex!important;
+                flex-direction: column;
+
+                .card{
+                    height: 370px!important;
+                    margin: 10px!important;
+                    h1{
+                        font-size: 25px!important;
+                    }
+                    .card_image{
+                        height: 80px!important;
+                        width: 80px!important;
+                    }
+                }
+            }
+        }
+        #section_our_certification{
+            display: flex!important;
+            flex-direction: column;
+            padding: 30px 20px!important;
+            h1{
+                text-align: center;
+                font-size: 7vw!important;
+            }
+            #content_cert_image{
+                margin-top: 50px;
+                margin-left: -100px!important;
+                height: 140px!important;
+                width: 200px!important;
+            }
+        }
+        #section_subcription{
+            height: 60vh!important;
+            h1{
+                font-size: 6vw!important;
             }
         }
     }

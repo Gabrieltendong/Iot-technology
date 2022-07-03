@@ -7,11 +7,13 @@ const Navbar = () => {
         <div id={styles.nabbar_wrapper} >
             <div>
                 <div id={styles.logo_wrapper}>
-                    <Image
-                        id={styles.logo}
-                        src={'/assets/icons/IOT.png'}
-                        layout='fill'
-                    />
+                    <Link href={'/'}>
+                        <Image
+                            id={styles.logo}
+                            src={'/assets/icons/IOT.png'}
+                            layout='fill'
+                        />
+                    </Link>
                 </div>
             </div>
             <div id={styles.navbar}>

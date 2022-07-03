@@ -14,8 +14,7 @@ const Footer = () => {
             <div id={styles.logo_wrapper}>
                 <Image
                     src={'/assets/icons/IOT.png'}
-                    height={300}
-                    width={300}
+                    layout='fill'
                 />
             </div>
             <div>

@@ -4,7 +4,7 @@ import { FaBookmark } from 'react-icons/fa'
 
 import Button from '../components/common/Button'
 import Footer from '../components/layout/Footer'
-import Navbar from '../components/layout/Navbar'
+import NavbarCustom from '../components/layout/Navbar'
 import styles from './style.module.scss'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <header>
         <div id={styles.header_content}>
-          <Navbar />
+          <NavbarCustom />
           <div id={styles.content_text}>
             <h1>Titre d'entete</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
