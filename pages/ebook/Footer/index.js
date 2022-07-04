@@ -1,11 +1,5 @@
 import styles from './style.module.scss'
-import { 
-    FaFacebook,
-    FaLinkedin,
-    FaInstagram,
-    FaTwitter,
-    FaYoutube
-} from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import Image from 'next/image';
 
 const Footer = () => {
@@ -57,14 +51,14 @@ const Footer = () => {
                 </div>
                 <div id={styles.copyright_wrapper}>
                     <h3>2022-IOT Technology</h3>
-                    <p>politique de confidentialité</p>
+                    <p>Politique de confidentialité</p>
                 </div>
             </div>
             <div>
                 <h3>Nous contacter</h3>
-                <p>28, Rue Lorem ipsum, Paris, France</p>
-                <p>Tel: (000) 00 000 00</p>
-                <p>Email: email@email.com</p>
+                <p>17 Avenue d'Italie Paris, France</p>
+                <p>Tél: 06.50.14.64.22</p>
+                <p>Email: iot-technology@gmail.com</p>
             </div>
         </div>
     )

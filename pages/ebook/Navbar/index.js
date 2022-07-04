@@ -4,7 +4,7 @@ import styles from './style.module.scss'
 
 const Navbar = () => {
     return (
-        <div id={styles.nabbar_wrapper} >
+        <div id={styles.navbar_wrapper} >
             <div>
                 <div id={styles.logo_wrapper}>
                     <Link href={'/'}>
@@ -17,24 +17,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div id={styles.navbar}>
-                <Link href='#'>
-                    Nos formations
-                </Link>
-                <Link href='#'>
-                    Tarifs
-                </Link>
-                <Link href='#'>
-                    Entreprise
-                </Link>
-                <Link href='/ebook'>
-                    Ebook
-                </Link >
-                <Link href='/register'>
-                    Inscription
-                </Link>
-                <Link href='/login'>
-                    Connection
-                </Link>
+                <Link href='#'> Nos formations</Link>
+                <Link href='#'> Tarifs</Link>
+                <Link href='#'> Entreprise</Link>
+                <Link href='/ebook'>Ebook</Link >
+                <Link href='/register'>Inscription</Link>
+                <Link href='/login'>Connection</Link>
             </div>
         </div>
     )

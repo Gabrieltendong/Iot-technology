@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaUser, FaKey } from 'react-icons/fa'
+import { FaUser, FaKey, FaMailBulk } from 'react-icons/fa'
 import Button from '../../components/common/Button'
-
 import styles from './style.module.scss'
 
 const Login = () => {
@@ -24,14 +23,20 @@ const Login = () => {
           <h3>Connection</h3>
           <div className={styles.input_wrapper}>
             <label>Email</label>
+
             <div className={styles.input} >
                 <FaUser 
                   color='#EB0000'
                   size={14}
                 />
-                <div className={styles.vertical_divided} ></div>
+            <div className={styles.vertical_divided} >
+                <FaMailBulk
+                  color='red'
+                  size={14}
+                  />
+                </div>
                 <input
-                  placeholder='Adresse email'
+                  placeholder=''
                 />
             </div>
           </div>
@@ -42,45 +47,40 @@ const Login = () => {
                   color='#EB0000'
                   size={14}
                 />
-                <div className={styles.vertical_divided} ></div>
+                <div className={styles.vertical_divided} >
+                  <FaKey
+                  color='red'
+                  size={14}
+                  />
+                </div>
                 <input
-                  placeholder='Mot de passe'
+                  placeholder=''
                 />
             </div>
-            <Link href={'/forgot-password'}>
-              <a>Mot de passe oublié?</a>
-            </Link>
+            <Link href={'/forgot-password'}>Mot de passe oublié?</Link>
           </div>
           <Button
-            text={'Connexion'}
+            text={'Connection'}
             style={styles.btn}
           />
         </div>
         <h2>Utilisez une autre méthode pour vous connecter </h2>
         <div id={styles.content_rs}>
             <div className={styles.rs_wrapper}>
-              <Image
-                src={'/assets/icons/google.png'}
-                layout='fill'
+              <Image src={'/assets/icons/google.png'} layout='fill'
               />
             </div>
             <div className={styles.rs_wrapper}>
-              <Image
-                src={'/assets/icons/github.png'}
-                layout='fill'
+              <Image src={'/assets/icons/github.png'} layout='fill'
               />
             </div>
             <div className={styles.rs_wrapper}>
-              <Image
-                src={'/assets/icons/linkedin.png'}
-                layout='fill'
+              <Image src={'/assets/icons/linkedin.png'} layout='fill'
               />
             </div>
         </div>
         <p>Vous n’avez pas de compte ? 
-          <Link href={'/register'}>
-            <a>Créer un compte gratuitement</a>
-          </Link>
+          <Link href={'/register'}>Créer un compte gratuitement</Link>
         </p>
 
         <footer>

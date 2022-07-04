@@ -18,8 +18,8 @@ export default function Home() {
           <Navbar />
           <div id={styles.header_content}>
               <div id={styles.header_text_wrapper}>
-                <h1>apprenez d’avantage avec nos ebooks</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat ut integer et, consequat, enim ultrices nunc. Egestas et sed ut eu feugiat eleifend ornare bibendum enim. Facilisi sit venenatis, quam feugiat morbi lorem quis duis massa. Pulvinar quis in nunc, ultrices aliquam sed eget id. Feugiat gravida at amet tincidunt in sed at facilisi. Nec, mauris sed sapien, eleifend. Mauris.</p>
+                <h1>apprenez davantage avec nos ebooks</h1>
+                <p>Que vous soyez un passioné de la lecture ou une révision. Nous avons sélectionnez pour vous des ebooks. La révision est agréable avec ce format. Où que vous soyez vous pourrez réviser.</p>
                 <Button
                   text={'En savoir plus'}
                   style={styles.btn}
@@ -28,26 +28,17 @@ export default function Home() {
               <div id={styles.box_content}>
                 <div id={styles.box_1}>
                     <div className={styles.content_image_header}>
-                      <Image
-                        src={'/assets/kubernetes.png'}
-                        layout="fill"
-                      />
+                      <Image src={'/assets/kubernetes.png'} layout="fill" />
                     </div>
                 </div>
                 <div id={styles.box_2}>
                     <div className={styles.content_image_header}>
-                      <Image
-                        src={'/assets/docker.png'}
-                        layout="fill"
-                      />
+                      <Image src={'/assets/docker.png'}layout="fill" />
                     </div>
                 </div>
                 <div id={styles.box_3}>
                     <div className={styles.content_image_header}>
-                      <Image
-                        src={'/assets/git.png'}
-                        layout="fill"
-                      />
+                      <Image src={'/assets/git.png'} layout="fill" />
                     </div>
                 </div>
               </div>
@@ -58,14 +49,12 @@ export default function Home() {
         <section className={styles.ebook_item}>
           <div className={styles.ebook_item_image}>
             <Image
-              src={'/assets/kubernetes.png'}
-              layout="fill"
-            />
+              src={'/assets/kubernetes.png'} layout="fill" />
           </div>
           <div className={styles.ebook_item_text}>
             <div className={styles.hr} />
-            <h2>L’essentiel de CKA Kybernetes</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
+            <h2>L’essentiel de CKA Kubernetes</h2>
+            <p>Revivez les temps forts de cette habilitation. Avec des quizs. Ne ratez pas votre habilitation. De plus augmentez votre taux d'employabilité. </p>
             <span>10€</span>
             <Button
                   text={'Acheter'}
@@ -76,37 +65,26 @@ export default function Home() {
         <section className={styles.ebook_item}>
           <div className={styles.ebook_item_text}>
             <div className={styles.hr} />
-            <h2>L’essentiel de docker</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
+            <h2>L’essentiel de Docker</h2>
+            <p>Docker c'est imposé comme la référence ces dernières années. Maitrisez enfin la conteneurisation et soyez expert de cette technologie. </p>
             <span>10 €</span>
-            <Button
-                  text={'Acheter'}
-                  style={styles.btn}
-                />
+            <Button text={'Acheter'} style={styles.btn} />
           </div>
           <div className={styles.ebook_item_image}>
             <Image
-              src={'/assets/docker.png'}
-              layout="fill"
-            />
+              src={'/assets/docker.png'} layout="fill" />
           </div>
         </section>
         <section className={styles.ebook_item}>
           <div className={styles.ebook_item_image}>
-            <Image
-              src={'/assets/git.png'}
-              layout="fill"
-            />
+            <Image src={'/assets/git.png'} layout="fill" />
           </div>
           <div className={styles.ebook_item_text}>
             <div className={styles.hr} />
-            <h2>L’essentiel de git</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
+            <h2>L’essentiel de Git</h2>
+            <p>Maitriser l'essentiel de Git. Le versionning est l'art de maitriser la version de son code et le maintenir.Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux, et distribué selon les termes de la licence publique générale GNU version 2. Le principal contributeur actuel de Git, et ce depuis plus de 16 ans. En 2016, il s’agit du logiciel de gestion de versions le plus populaire qui est utilisé par plus de douze millions de personnes.</p>
             <span>10 €</span>
-            <Button
-                  text={'Acheter'}
-                  style={styles.btn}
-                />
+            <Button text={'Acheter'} style={styles.btn} />
           </div>
         </section>
         <section className={styles.ebook_item}>
@@ -115,16 +93,10 @@ export default function Home() {
             <h2>L’essentiel de Linux</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas sed vitae sed cras mattis ut elit fermentum. In volutpat penatibus nam feugiat varius sed tristique. At malesuada urna vel augue elementum bibendum tempor. </p>
             <span>10 €</span>
-            <Button
-                  text={'Acheter'}
-                  style={styles.btn}
-                />
+            <Button text={'Acheter'}style={styles.btn} />
           </div>
           <div className={styles.ebook_item_image}>
-            <Image
-              src={'/assets/linux.png'}
-              layout="fill"
-            />
+            <Image src={'/assets/linux.png'} layout="fill" />
           </div>
         </section>
       </main>

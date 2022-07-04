@@ -112,7 +112,7 @@ export default function Home() {
                         layout='fill'
                       />
                     </div>
-                    <h5>Typscript</h5>
+                    <h5>Typescript</h5>
                   </div>
                   <div className={styles.alin_center}>
                     <div className={styles.card_image}>

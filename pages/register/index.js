@@ -90,7 +90,7 @@ const Register = () => {
                 label={'Nom'}
               />
               <Input
-                label={'Émail'}
+                label={'Email'}
               />
               <Input
                 label={'Mot de passe'}

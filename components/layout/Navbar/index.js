@@ -34,6 +34,8 @@ const NavbarCustom = () => {
                         <Nav.Link href="/ebook">Ebook</Nav.Link>
                         <Nav.Link href="/register">Inscription</Nav.Link>
                         <Nav.Link href="/login">Connection</Nav.Link>
+                        <Nav.Link href="/tarifs">Tarifs</Nav.Link>
+
                     </Nav>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>
