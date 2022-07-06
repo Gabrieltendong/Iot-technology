@@ -29,11 +29,7 @@ const Login = () => {
                   color='#EB0000'
                   size={14}
                 />
-            <div className={styles.vertical_divided} >
-                <FaMailBulk
-                  color='red'
-                  size={14}
-                  />
+                <div className={styles.vertical_divided} >
                 </div>
                 <input
                   placeholder=''
@@ -43,16 +39,11 @@ const Login = () => {
           <div className={styles.input_wrapper}>
             <label>Mot de passe</label>
             <div className={styles.input} >
-                <FaUser 
+                <FaKey
                   color='#EB0000'
                   size={14}
                 />
-                <div className={styles.vertical_divided} >
-                  <FaKey
-                  color='red'
-                  size={14}
-                  />
-                </div>
+                <div className={styles.vertical_divided} />
                 <input
                   placeholder=''
                 />
