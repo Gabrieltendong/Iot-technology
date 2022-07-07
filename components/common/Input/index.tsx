@@ -1,6 +1,13 @@
+import { ChangeEventHandler } from 'react';
 import styles from './style.module.scss'
 
-const Input = ({ style, label, onChange }) => {
+interface InputProps{
+    style?: any,
+    label: string,
+    onChange?: ChangeEventHandler
+}
+
+const Input = ({ style, label, onChange }: InputProps): JSX.Element => {
     return (
         <div
             className={`${styles.input_wrapper} ${style}`}

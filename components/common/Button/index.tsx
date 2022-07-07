@@ -1,6 +1,13 @@
+import { MouseEventHandler } from 'react';
 import styles from './style.module.scss'
 
-const Button = ({style, onClick, text}) => {
+interface ButtonProps {
+    style?: any,
+    onClick?: MouseEventHandler,
+    text: string
+}
+
+const Button = ({style, onClick, text}: ButtonProps): JSX.Element => {
     return(
         <button 
             className={`${styles.btn_wrapper} ${style}`} 
