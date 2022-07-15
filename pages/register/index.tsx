@@ -1,13 +1,46 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useRef, useState } from 'react'
 import { FaUser, FaKey } from 'react-icons/fa'
+import { useDispatch, useSelector } from 'react-redux'
 import Button from '../../components/common/Button'
 import Input from '../../components/common/Input'
+import { AppDispatch } from '../../src/app/store'
+import { clearData, registerSelector, signUp } from '../../src/features/user/registerSlice'
+import { UserRegister } from '../../src/interface/user.register'
 
 import styles from './style.module.scss'
 
 const Register = () => {
+  const dispatch: AppDispatch = useDispatch()
+  const {data, status, error} = useSelector(registerSelector)
+  const [first_name, setFirst_name] = useState('')
+  const [last_name, setLast_name] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const inputRef = useRef()
+
+  const register = (e) => {
+    e.preventDefault()
+    const data: UserRegister = { first_name, last_name, email, password }
+    dispatch(signUp(data))
+  }
+
+  useEffect(() => {
+    inputRef?.current?.focus()
+    dispatch(clearData())
+  }, [])
+
+  const handleEnter = (event) => {
+    if (event.key.toLowerCase() === "enter") {
+      const form = event.target.form;
+      const index = [...form].indexOf(event.target);
+      form.elements[index + 1].focus();
+      event.preventDefault();
+    }
+  };
+
   return (
     <div>
       <Head>
@@ -83,29 +116,60 @@ const Register = () => {
                 <p>OU</p>
                 <div className={styles.outline}></div>
               </div>
-              <Input
-                label={'Prénom'}
-              />
-              <Input
-                label={'Nom'}
-              />
-              <Input
-                label={'Email'}
-              />
-              <Input
-                label={'Mot de passe'}
-              />
-              <p id={styles.link_cgu}>En créant un compte vous acceptez les  
-                <Link href={'#'}>
-                  <a> conditions générales d'utilisation</a>
-                </Link>
-              </p>
-              <Button
-                text={'Inscription'}
-                style={styles.btn}
-              />
+              {
+                Object.keys(data).length != 0 && 
+                <div className="alert alert-success" role="alert">
+                  Veuillez valider votre adresse email
+                </div>
+              }
+              {
+                error && 
+                <div className="alert alert-danger" role="alert">
+                  {
+                    typeof error=='string'?error
+                    :
+                    error.map((err) => (
+                      <p className={styles.errorMessage}>* {err}</p>
+                    ))
+                  }
+                </div>
+              }
+              <form onSubmit={register}>
+                <Input
+                  label={'Prénom'}
+                  onChange={(e) => setFirst_name(e.target.value)}
+                  inputRef={inputRef}
+                  onKeyDown={handleEnter}
+                />
+                
+                <Input
+                  label={'Nom'}
+                  onChange={(e) => setLast_name(e.target.value)}
+                  onKeyDown={handleEnter}
+                />
+                <Input
+                  label={'Email'}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onKeyDown={handleEnter}
+                />
+                <Input
+                  label={'Mot de passe'}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <p id={styles.link_cgu}>En créant un compte vous acceptez les  
+                  <Link href={'#'}>
+                    <a> conditions générales d'utilisation</a>
+                  </Link>
+                </p>
+                <Button
+                  text={'Inscription'}
+                  style={styles.btn}
+                  type="submit"
+                  isLoading={status=="loading"?true:false}
+                />
+              </form>
               <p id={styles.link_login}>Vous avez déjà un compte ?  
-                <Link href={'/register'}>
+                <Link href={'/login'}>
                   <a>Connectez-vous</a>
                 </Link>
               </p>

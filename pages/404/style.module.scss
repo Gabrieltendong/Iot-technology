@@ -28,6 +28,11 @@
     background: rgb(5, 129, 245);
     color: white;
 }
+#image_wrapper{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
 
 @media screen and (max-width:630px){
     .h1{        

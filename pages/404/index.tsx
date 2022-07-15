@@ -8,16 +8,18 @@ const NotFound = () => {
  const router = useRouter();
 
  useEffect(() => {
-    setTimeout(() => {
-        router.push('/');
-    }, 3000)
+    // setTimeout(() => {
+    //     router.push('/');
+    // }, 3000)
  }, [])
 
  return (
     <>
 
     <div className={styles.container}>
-         <Image src='/assets/icons/img1.svg' alt="" layout='fill'/>
+         <div id={styles.image_wrapper}>
+            <Image src='/assets/icons/img1.svg' alt="" layout='fill'/>
+         </div>
          <h1 className={styles.h1}>La page demandée n'a pas été trouvée</h1>
          <p>Retour à la maison <Link href="/">Acceuil</Link></p>
      </div>

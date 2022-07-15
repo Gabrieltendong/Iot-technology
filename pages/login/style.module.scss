@@ -18,6 +18,10 @@
     .btn:hover{
         background-color: rgb(12, 12, 70);
     }
+    .errorMessage{
+        margin: 1px 0;
+        text-align:left;
+    }
 
     #card{
         min-height: 300px;
@@ -94,8 +98,6 @@
     }
     footer{
         height: 20px;
-        position: absolute;
-        bottom: 20px;
         span{
             font-size: 16px;
             font-family: 'Montserrat-Bold';

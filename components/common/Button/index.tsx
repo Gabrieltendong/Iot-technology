@@ -4,16 +4,26 @@ import styles from './style.module.scss'
 interface ButtonProps {
     style?: any,
     onClick?: MouseEventHandler,
-    text: string
+    text: string,
+    type?: "submit",
+    isLoading?: boolean
 }
 
-const Button = ({style, onClick, text}: ButtonProps): JSX.Element => {
+const Button = ({style, onClick, text, type, isLoading}: ButtonProps): JSX.Element => {
     return(
         <button 
             className={`${styles.btn_wrapper} ${style}`} 
             onClick={onClick}
+            type={type}
         >
-            {text}
+            {
+                !isLoading?
+                text
+                :
+                <div className="spinner-border text-light" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            }
         </button>
     )
 }
